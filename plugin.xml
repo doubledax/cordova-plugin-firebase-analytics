@@ -45,7 +45,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.INTERNET" />
         </config-file>
-
+           
+        <config-file parent="/resources" target="res/values/strings.xml">
+           <string name="google_app_id">XXXXXXXXXX</string>
+        </config-file>
+        <config-file parent="/resources" target="res/values/strings.xml">
+           <string name="google_api_key">XXXXXXXXXX</string>
+        </config-file>  
         <framework src="com.google.firebase:firebase-core:+" />
 
         <source-file src="src/android/FirebaseAnalyticsPlugin.java"
